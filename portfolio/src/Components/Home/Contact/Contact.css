@@ -1,0 +1,128 @@
+
+.contact-container {
+  min-height: 100vh;
+  width: 100%;
+  padding: 80px 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #151312;
+  color: white;
+}
+
+.contact-label {
+  color: #e879f9;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  margin-bottom: 15px;
+}
+
+.contact-title {
+  font-size: clamp(36px, 5vw, 52px);
+  font-weight: 800;
+  margin: 0 0 15px;
+}
+
+.contact-title span {
+  background: linear-gradient(90deg, #c026d3, #f97316);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.contact-description {
+  color: #aaa3ad;
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.7;
+  margin-bottom: 35px;
+}
+
+.contact-card {
+  width: 100%;
+  max-width: 600px;
+  padding: 35px;
+  box-sizing: border-box;
+  background: linear-gradient(145deg, #211a25, #181518);
+  border: 1px solid #49334f;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+  transition: border-color 0.3s ease,
+              box-shadow 0.3s ease;
+}
+
+.contact-card:hover {
+  border-color: #c026d3;
+  box-shadow: 0 15px 40px rgba(192, 38, 211, 0.1);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-form label {
+  margin-top: 8px;
+  color: #eee6f0;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 14px;
+  box-sizing: border-box;
+  background-color: #151312;
+  color: white;
+  border: 1px solid #49334f;
+  border-radius: 10px;
+  outline: none;
+  font-family: inherit;
+  font-size: 15px;
+  transition: border-color 0.3s ease;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #837987;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #d946ef;
+  box-shadow: 0 0 10px rgba(192, 38, 211, 0.1);
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(90deg, #c026d3, #f97316);
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.contact-btn:hover {
+  transform: translateY(-3px);
+  opacity: 0.9;
+}
+
+.contact-btn span {
+  font-size: 20px;
+}
+

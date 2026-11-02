@@ -1,0 +1,36 @@
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: rgb(73, 3, 100);
+  color: white;
+}
+
+.logo {
+  margin: 0;
+  font-size: 28px;
+  font-weight: bold;
+
+  background: linear-gradient(135deg, #d02de5, #f97316);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.navbar {
+  display: flex;
+  gap: 25px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.navbar a:hover {
+  color: #93a5ff;
+}
+
